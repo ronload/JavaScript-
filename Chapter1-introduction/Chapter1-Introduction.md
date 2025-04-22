@@ -59,7 +59,7 @@ Node.js是一種Javascript Runtime Environment（JRE），提供你隨時隨地�
 到此為止，你成功創建並執行了你的第一個 `Javascript` 檔案，接下來我們會解釋在這段過程中所用到的功能。
 
 1. 在步驟一中，我們建立了一個名為HelloWorld.js的檔案，檔名是什麼其實不太重要，重點是 `.js` 副檔名。js是JavaScript的縮寫，當一個檔案以 `.js` 結尾時，我們的電腦會自動將它識別為一個JavaScript檔案（前提是你有安裝Node.js）。
-2. 在步驟二中，我們使用了 `console.log()` 這個工具，這個工具會將小括弧內的東西打印出來，在這個案例中，我們將 `"Hello World!"` 放進了 `console.log()` 的小括弧中。
+2. 在步驟二中，我們使用了 `console.log()` 這個工具，這個工具會將小括弧內的東西打印出來並換行，在這個案例中，我們將 `"Hello World!"` 放進了 `console.log()` 的小括弧中。
 3. 在每一行程式碼中，我們都應該在結尾添加分號 `;` 表示該行結束。
 4. 在 terminal 中，我們使用Node.js執行我們剛剛寫完的檔案。在這邊我們學到了Node.js的第一個功能：執行JavaScript檔案。在有安裝Node.js的電腦上，我們可以在 terminal 上使用 `node <檔案名>` 這樣的指令來執行我們的 Javascript 檔案。
 5. 成功執行檔案，並印出 `Hello World!`。

@@ -1,13 +1,11 @@
-// 1 == 1
-// 1 = 1 why not?
+let num = 0;       // 宣告 num 並將其賦值為 0
+console.log(num);  // 0
+num = num + 1;     // 將 num + 1 後重新賦值給 num
+console.log(num);  // 1
+num = num * 3;     // 將 num * 3 後重新賦值給 num
+console.log(num);  // 3
 
-let hello = "helloworld";  // string
-console.log("1. " + hello);
-hello = "123"; // string
-console.log("2. " + hello);
-console.log(hello);
-const vavv = 1 == 1;
-console.log(vavv);
-// const hello = "helloworld";
-
-// console.log(hello);
+let context = "Hello";
+console.log(context);
+context = context + "World";
+console.log(context)
