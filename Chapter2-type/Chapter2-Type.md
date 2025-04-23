@@ -1,4 +1,4 @@
-# Chapter2-Types
+# Chapter2-Type
 
 ## Introduction
 
