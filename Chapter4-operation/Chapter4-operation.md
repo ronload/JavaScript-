@@ -106,7 +106,7 @@ console.log(!false)  // true
 
 透過邏輯運算子，我們可以清晰的表達各種條件和約束。
 
-## 算術運算子
+## 算術運算子（Arithmetic Operator）
 算術運算子是用來執行數值之間的基本數學運算，計算結果以 `number` 表示。JavaScript 支援以下算術運算子：
 
 ### 基本運算
