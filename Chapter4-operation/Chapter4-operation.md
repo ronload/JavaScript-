@@ -89,6 +89,7 @@ console.log(!false)  // true
     ```javascript
     let age = 18;
     let hasDriveLicense = true;
+    // 當 年齡 >= 18 且 持有駕照為真
     let canDrive = (age >= 18) && hasDriveLicense;
 
     console.log(canDrive)  // true
@@ -99,9 +100,158 @@ console.log(!false)  // true
     ```javascript
     let career = "police";
 
+    // 當 職業等於警察 或 職業等於軍人
     let canUseGun = (career == "police") || (career == "soldier");  // true
     ```
 
 透過邏輯運算子，我們可以清晰的表達各種條件和約束。
 
 ## 算術運算子
+算術運算子是用來執行數值之間的基本數學運算，計算結果以 `number` 表示。JavaScript 支援以下算術運算子：
+
+### 基本運算
+
+- `+`：加法。
+
+    ```javascript
+    let sum = 5 + 3;
+    console.log(sum)  // 8
+    ```
+
+- `-`：減法。
+
+    ```javascript
+    let diffrence = 5 - 3;
+    console.log(diffrence)  // 2
+    ```
+
+- `*`：乘法
+
+    ```javascript
+    let product = 5 * 3;
+    console.log(product)  // 15
+    ```
+
+- `/`：除法。
+
+    ```javascript
+    let quotient = 20 / 5;
+    console.log(quotient)  // 4
+    ```
+
+- `%`：取餘數（mod運算）。
+
+    ```javascript
+    let remainder = 5 % 3;
+    console.log(remainder)  // 2
+    ```
+
+- `**`：次方。
+
+    ```javascript
+    let power = 5 ** 3;
+    console.log(power)  // 125
+    ```
+
+### 遞增/遞減運算
+
+- `++`：遞增，將數值加 1
+    ```javascript
+    let count = 5;
+    count++;             // 等同於 count = count + 1
+    console.log(count);  // 6
+    ```
+
+- `--`：遞減，將數值減 1
+    ```javascript
+    let count = 5;
+    count--;  // 等同於 count = count - 1
+    console.log(count);  // 4
+    ```
+增和遞減運算子可以放在變數前（前綴）或後（後綴），位置不同會影響運算結果：
+
+```javascript
+let a = 5;
+let b = 5;
+
+let resultA = a++;  // 後綴：先賦值再加 1
+let resultB = ++b;  // 前綴：先加 1 再賦值
+
+console.log(resultA);  // 5
+console.log(a);        // 6
+console.log(resultB);  // 6
+console.log(b);        // 6
+```
+
+### 複合賦值運算
+
+複合賦值運算子是算術運算和賦值的組合，可以簡化代碼：
+
+- `+=`：加等於
+
+    ```javascript
+    let x = 10;
+    x += 5;  // 等同於 x = x + 5
+    console.log(x);  // 15
+    ```
+- `-=`：減等於
+
+    ```javascript
+    let x = 10;
+    x -= 3;  // 等同於 x = x - 3
+    console.log(x);  // 7
+    ```
+- `*=`：乘等於
+
+    ```javascript
+    let x = 5;
+    x *= 2;  // 等同於 x = x * 2
+    console.log(x);  // 10
+    ```
+- `/=`：除等於
+
+    ```javascript
+    let x = 15;
+    x /= 3;  // 等同於 x = x / 3
+    console.log(x);  // 5
+        ```
+- `%=`：餘等於
+
+    ```javascript
+    let x = 10;
+    x %= 3;  // 等同於 x = x % 3
+    console.log(x);  // 1
+    ```
+- `**=`：次方等於
+
+    ```javascript
+    let x = 2;
+    x **= 3;  // 等同於 x = x ** 3
+    console.log(x);  // 8
+    ```
+
+## 運算子優先順序
+當一個表達式中包含多個運算子時，運算子的優先順序決定了運算的執行順序。以下是一些常見的優先順序（從高到低）：
+
+- 括號 `()`
+- 遞增 `++`、遞減 `--`（前綴）、一元運算子（`+`、`-`、`!`）
+- 次方 `**`
+- 乘法 `*`、除法 `/`、餘數 `%`
+- 加法 `+`、減法 `-`
+- 比較運算子（`<`、`>`、`<=`、`>=`）
+- 相等運算子（`==`、`!=`、`===`、`!==`）
+- 邏輯 AND `&&`
+- 邏輯 OR `||`
+- 三元運算子 ? :  (這個之後會教，先知道就好)
+- 賦值運算子（`=`、`+=`、`-=`、...）
+
+範例：
+```javascript
+let result = 2 + 3 * 4;
+console.log(result);  // 14，而不是 20，因為乘法優先級高於加法
+
+let result2 = (2 + 3) * 4;
+console.log(result2);  // 20，使用括號改變運算順序
+```
+
+了解運算子優先順序可以幫助我們寫出更準確的程式碼，並避免因優先順序不明確導致的錯誤。在複雜的表達式中，建議使用括號來明確優先順序，這樣代碼也更易讀。
