@@ -8,9 +8,9 @@ if-else statement 的語法如下所示：
 
 ```javascript
 if ( /* 條件 */ ) {
-  // 若條件為 true，則執行這個區塊的程式碼
+    // 若條件為 true，則執行這個區塊的程式碼
 } else {
-  // 若條件為 false，則執行這個區塊的程式碼
+    // 若條件為 false，則執行這個區塊的程式碼
 }
 ```
 
@@ -29,11 +29,11 @@ ifElse --> |false|B(else block)
 let num = 1;
 
 if (num % 2 == 0) {
-  // 若 num % 2 == 0，則執行這裡的程式碼
-  console.log("is even number");  
+    // 若 num % 2 == 0，則執行這裡的程式碼
+    console.log("is even number");  
 } else {
-  // 否則，執行這裡的程式碼
-  console.log("is odd number");
+    // 否則，執行這裡的程式碼
+    console.log("is odd number");
 }
 ```
 
@@ -51,29 +51,29 @@ is odd number
 let studentGrade = 87;
 
 if (studentGrade >= 90) {
-  // 若學生成績大於等於 90 分
-  console.log("GPA: A");
+    // 若學生成績大於等於 90 分
+    console.log("GPA: A");
 } else {
-  // 否則
-  if (90 > studentGrade && studentGrade >= 80) {
-    // 若學生成績小於 90 分且學生成績大於等於 80 分
-    console.log("GPA: B");
-  } else {
     // 否則
-    if (80 > studentGrade && studentGrade >= 70) {
-      // 若學生成績小於 80 分且學生成績大於等於 70 分
-      console.log("GPA: C");
+    if (90 > studentGrade && studentGrade >= 80) {
+        // 若學生成績小於 90 分且學生成績大於等於 80 分
+        console.log("GPA: B");
     } else {
-      // 否則
-      if (70 > studentGrade && student >= 60) {
-        // 若學生成績小於 70 分且學生成績大於等於 60 分
-        console.log("GPA: D");
-      } else {
         // 否則
-        console.log("GPA: F");
-      }
+        if (80 > studentGrade && studentGrade >= 70) {
+            // 若學生成績小於 80 分且學生成績大於等於 70 分
+            console.log("GPA: C");
+        } else {
+            // 否則
+            if (70 > studentGrade && student >= 60) {
+                // 若學生成績小於 70 分且學生成績大於等於 60 分
+                console.log("GPA: D");
+            } else {
+                // 否則
+                console.log("GPA: F");
+            }
+        }
     }
-  }
 }
 ```
 
@@ -89,20 +89,20 @@ GPA: B
 let studentGrade = 87;
 
 if (studentGrade >= 90) {
-  // 若學生成績大於等於 90 分
-  console.log("GPA: A");
+    // 若學生成績大於等於 90 分
+    console.log("GPA: A");
 } else if (90 > studentGrade && studentGrade >= 80) {
-  // 否則若學生成績小於 90 分且學生成績大於等於 80 分
-  console.log("GPA: B");
+    // 否則若學生成績小於 90 分且學生成績大於等於 80 分
+    console.log("GPA: B");
 } else if (80 > studentGrade && studentGrade >= 70) {
     // 否則若學生成績小於 80 分且學生成績大於等於 70 分
     console.log("GPA: C");
 } else if (70 > studentGrade && student >= 60) {
-  // 否則若學生成績小於 70 分且學生成績大於等於 60 分
-  console.log("GPA: D");
+    // 否則若學生成績小於 70 分且學生成績大於等於 60 分
+    console.log("GPA: D");
 } else {
-  // 否則
-  console.log("GPA: F");
+    // 否則
+    console.log("GPA: F");
 }        
 ```
 
@@ -128,9 +128,9 @@ console.log(isEven);
 // let num = 2;
 // let isEven;
 // if (num % 2 == 0) {
-//	isEven = true;
+//     isEven = true;
 // } else {
-//  isEven = false;
+//     isEven = false;
 // }
 ```
 
@@ -153,29 +153,29 @@ let day = 3;
 let dayName;
 
 switch(day) {
-  case 1:
-    dayName = "Monday";
-    break;
-  case 2:
-    dayName = "Tuesday";
-    break;
-  case 3:
-    dayName = "Wednesday";
-    break;
-  case 4:
-    dayName = "Thursday";
-    break;
-  case 5:
-    dayName = "Friday";
-    break;
-  case 6:
-    dayName = "Saturday";
-    break;
-  case 7:
-    dayName = "Sunday";
-    break;
-  default:
-  	dayName = "Invalid dayName";
+    case 1:
+        dayName = "Monday";
+        break;
+    case 2:
+        dayName = "Tuesday";
+        break;
+    case 3:
+        dayName = "Wednesday";
+        break;
+    case 4:
+        dayName = "Thursday";
+        break;
+    case 5:
+        dayName = "Friday";
+        break;
+    case 6:
+        dayName = "Saturday";
+        break;
+    case 7:
+        dayName = "Sunday";
+        break;
+    default:
+        dayName = "Invalid dayName";
 }
 
 console.log(dayName)  // Wednesday
